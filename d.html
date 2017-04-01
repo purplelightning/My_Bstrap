@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+  <head>
+    <title>Bootstrap练习</title>
+    <script src="./jquery-3.2.0.min.js"></script>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <script src="./js/bootstrap.min.js"></script>
+    <style>
+      .xian{
+        font-size:50px;
+        color: red;
+        margin-top:-30px;
+      }
+      .wid{
+        position: relative;
+        /*width:500px;*/
+        text-align: center;
+        margin:auto;
+        color:orange;
+      }
+      th{
+        text-align: center;
+      }
+      .im{
+        /*margin-left: 10px;*/
+        width:200px;
+        height: 200px;
+      }
+      .im1{
+        width:150px;
+        /*height:150px;*/
+      }
+      .wen{
+        width:150px;
+      }
+      body{
+        padding-top:70px;
+        padding-bottom: 70px;
+      }
+      header{
+        height:200px;
+        background-size: 100%;
+        background-color: rgba(170,120,240,0.6);
+      }
+      footer{
+        height:200px;
+        background-color: #344523;
+        text-align: center;
+        font-size: 30px;
+        color:yellow;
+        padding-top: 30px;
+        margin-top:40px;
+      }
+      p{
+        margin-left:10px;
+        margin-top:10px;
+      }
+      .box{
+        background:url(/home/wind/图片/22.jpg) no-repeat;
+        opacity: 1;
+        background-size: 100%;
+        background-color: rgba(223,70,40,0.7);
+      }
+      .con{
+        background-color: #444443;
+        width:80%;
+        max-width:1000px;
+        height:300px;
+        margin:auto;
+      }
+      div.container div.row div{
+        margin:5px 0px;
+      }
+      div.container div.row div{
+        background-color: grey;
+        border:1px solid black;
+        text-align: center;
+      }
+      div.well{
+        margin:10px;
+      }
+      div.item img{
+        width:100%;
+        max-height:500px;
+        min-height:350px;
+      }
+      div#carousel-example-generic{
+        width:80%;
+        margin:auto;
+        
+      }
+      div#carousel-example-generic1{
+        width:80%;
+        margin:0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-xs-5">
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <button class="btn btn-info">菜单1</button>
+          <button class="btn btn-danger">菜单2</button>
+          <button class="btn btn-warning">菜单3</button>
+        </nav></div>
+        <div class="col-xs-5">
+        <nav class="navbar navbar-default navbar-static-top">
+          <button class="btn btn-info">菜单1</button>
+          <button class="btn btn-danger">菜单2</button>
+          <button class="btn btn-warning">菜单3</button>
+        </nav></div>
+      </div>
+        
+    </div>
+    <div class="row">
+        <div class="col-xs-5">
+        <div style="white-space:pre">
+    下拉才看得见，下拉时，置顶菜单不消失
+    下拉才看得见，下拉时，置顶菜单不消失
+    下拉才看得见，下拉时，置顶菜单不消失
+    下拉才看得见，下拉时，置顶菜单不消失
+        </div>
+      </div>
+      <div class="col-xs-5">
+        <div style="white-space:pre">
+  下拉才看得见，下拉时，置顶菜单会消失
+  下拉才看得见，下拉时，置顶菜单会消失
+  下拉才看得见，下拉时，置顶菜单会消失
+  下拉才看得见，下拉时，置顶菜单会消失
+  下拉才看得见，下拉时，置顶菜单会消失
+        </div>
+      </div>
+  </div>
+  
+    <h1 class="text-center" style="color:yellow">Bootstrap练习</h1>
+    <header>
+      <div style="text-align:center;font-size:30px;color:#934432;">
+        练习目录
+      </div>
+    </header>
+    <div class="box">
+      <a href="#nowhere">
+    <span class="glyphicon glyphicon-asterisk" style="font-size:30px;color:green;margin-bottom:20px;">首先是按钮</span></a><br>
+    <button class="btn btn-default">默认按钮</button>
+    <button class="btn btn-primary">提交按钮</button>
+    <button class="btn btn-success">成功按钮</button>
+    <button class="btn btn-info">信息按钮</button>
+    <button class="btn btn-link">表现为链接</button>
+    <button class="btn btn-danger">危险按钮</button>
+    <button class="btn btn-lg">大按钮</button>
+    <button class="btn active">激活状态按钮</button>
+    <button class="btn btn-xs">最小按钮</button>
+    <button class="btn disabled">不可选定按钮</button>
+    <button class="btn disabled btn-danger btn-lg">发红包</button>
+    <button class="btn btn-block">宽屏按钮</button>
+    <div class="xian text-center">___________________________</div>
+    <h3>接下来的是表格</h3>
+    <div class="wid row">
+      <div class="col-xs-6">
+    <table class="table" >
+      <caption class="text-center" style="color:red;">普通表格</caption>
+      <thead>
+        <th>英雄</th><th>属性</th><th>类型</th>
+      </thead>
+      <tr><td>幻刺</td><td>敏捷</td><td>大后期</td> </tr>
+      <tr> <td>敌法师</td><td>敏捷</td><td>大后期</td>  </tr>
+      <tr><td>剑圣</td><td>敏捷</td><td>大后期</td> </tr>
+    </table></div>
+    <div class="col-xs-6">
+    <table class="table table-bordered table-striped">
+      <caption class="text-center" style="color:red;">边框表格</caption>
+      <thead>
+        <th>英雄</th><th>属性</th><th>类型</th>
+      </thead>
+      <tr><td>幻刺</td><td>敏捷</td><td>大后期</td></tr>
+      <tr><td>敌法师</td><td>敏捷</td><td>大后期</td></tr>
+      <tr><td>剑圣</td><td>敏捷</td><td>大后期</td></tr>
+    </table></div>
+    <div class="col-xs-6">
+    <table class="table table-hover">
+      <caption class="text-center" style="color:red;">鼠标悬停表格</caption>
+      <thead>
+        <th>英雄</th><th>属性</th><th>类型</th>
+      </thead>
+      <tr><td>幻刺</td><td>敏捷</td><td>大后期</td></tr>
+      <tr><td>敌法师</td><td>敏捷</td><td>大后期</td>  </tr>
+      <tr><td>剑圣</td><td>敏捷</td><td>大后期</td> </tr>
+    </table></div>
+    <div class="col-xs-6">
+    <table class="table table-hover">
+      <caption class="text-center" style="color:red;">多色表格</caption>
+      <thead>
+        <th>英雄</th><th>属性</th><th>类型</th>
+      </thead>
+      <tr class="active"><td>幻刺</td><td>敏捷</td><td>大后期</td></tr>
+      <tr class="success"><td>剑圣</td><td>敏捷</td><td>大后期</td> </tr>
+      <tr class="info"><td>剑圣</td><td>敏捷</td><td>大后期</td> </tr>
+      <tr class="warning"><td>剑圣</td><td>敏捷</td><td>大后期</td> </tr>
+      <tr class="danger"><td>剑圣</td><td>敏捷</td><td>大后期</td> </tr>
+    </table></div>
+    </div>
+    <div class="xian text-center">___________________________</div>
+    <h3>图片</h3>
+    <div class="row">
+    <div class="col-xs-4"><img src="./19.jpg" class="img-rounded im"></div>
+    <div class="col-xs-4"><img src="./20.jpg" class="img-circle im"></div>
+    <div class="col-xs-4"><img src="./21.jpg" class="img-thumbnail im"></div>
+    </div>
+    <div class="xian text-center">___________________________</div>
+    <input type="text" class="form-control" value="文本框">
+    <input type="password" class="form-control" value="密码">
+    <textarea class="form-control">文本域</textarea>
+    <select class="form-control">
+      <option>Java</option>
+      <option>Html</option>
+      <option>IOS</option>
+    </select>
+    <div class="xian text-center">___________________________</div>
+    <div class="row">
+    <div class="bg-primary col-xs-4">强调</div>
+    <div class="bg-success col-xs-4">成功</div>
+    <div class="bg-danger col-xs-4">危险</div></div>
+    
+    <button type="button" class="close" aria-hidden="true">&times;</button>
+    <span class="caret"></span><br>
+    <div class="pull-left">
+      文字浮动到左边
+    </div><br>
+    <div class="show">显示1</div>
+    <div class="hidden">隐藏</div>
+    <div class="show">显示3</div>
+    <div class="show">显示1</div>
+    <div class="invisible">隐藏</div>
+    <div class="show">显示3</div>
+    <div class="xian text-center">___________________________</div>
+    <h3>col一行分列,比div设置宽度好用</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+        一共12列
+      </div></div>
+      <div class="row">
+        <div class="col-xs-1">1列</div><div class="col-xs-1">1列</div><div class="col-xs-1">1列</div><div class="col-xs-1">1列</div><div class="col-xs-1">1列</div><div class="col-xs-1">1列</div><div class="col-xs-1">1列</div><div class="col-xs-1">1列</div><div class="col-xs-1">1列</div><div class="col-xs-1">1列</div><div class="col-xs-1">1列</div><div class="col-xs-1">1列</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-8">8列</div>
+        <div class="col-xs-4">4列</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6">6列</div>
+        <div class="col-xs-6">6列</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4">4列</div>
+        <div class="col-xs-4">4列</div>
+        <div class="col-xs-4">4列</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-8">8格自动换行</div>
+        <div class="col-xs-6">6格</div>
+      </div>
+    </div>
+    
+    <div class="xian text-center">___________________________</div>
+    <h3>下拉菜单</h3>
+    <p>
+      data-toggle='dropdown' 代表将一个button属性的标签转换为一个下拉菜单属性的标签,aria-labelledby 这个是给读屏软件用的，目标用户是视觉障碍人士
+    </p>
+    <div class="row">
+    <div class="dropdown col-xs-6">
+      <button type="button" class="btn dropdown-toggle" id="dropdown-menu1" data-toggle="dropdown">
+      第一个菜单
+        <span class="caret"></span>
+      </button>
+      
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+        <li>
+          <a href="#">HTML</a>
+        </li>
+        <li role="presentation">
+          <a href="#">CSS</a>
+        </li>
+        <li role="presentation">
+          <a href="#">Javascript</a>
+        </li>
+        <li role="presentation">
+          <a href="#">AJAX</a>
+        </li>
+      </ul>
+    </div>
+    <div class="droopdown col-xs-6">
+      <button type="button" class="btn dropdown-toggle" id="dropdown-menu1" data-toggle="dropdown">
+        第二个菜单
+        <span class="caret"></span>
+      </button>
+      
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+        <li class="dropdown-header">
+          静态页面(不可点击)
+        </li>
+        <li role="presentation">
+          <a href="#">HTML</a>
+        </li>
+        <li role="presentation">
+          <a href="#">CSS</a>
+        </li>
+        <li role="presentation" class="divider"></li>
+        <li class="dropdown-header">
+          动态页面(不可点击)
+        </li>
+        <li role="presentation">
+          <a href="#">Javascript</a>
+        </li>
+        <li role="presentation">
+          <a href="#">AJAX</a>
+        </li>
+        <li role="presentation" class="disabled">
+          <a role="menuitem" tabindex="-1" href="#">Bootstrap(开发中)</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div class="xian text-center">___________________________</div>
+    <h3>按钮组</h3>
+    <h5>单独按钮组</h5>
+    <div class="btn-group" role="group" aria-label="web">
+      <button type="button" class="btn btn-default">HTML</button>
+      <button type="button" class="btn btn-default">CSS</button>
+      <button type="button" class="btn btn-default">JS</button>
+    </div>
+    
+    <h5>按钮工具栏</h5>
+    <div class="btn-toolbar" role="toolbar" aria-label="study">
+      <div class="btn-group" role="group" aria-label="Python">
+        <button class="btn btn-primary">初级</button>
+        <button class="btn btn-primary">中级</button>
+        <button class="btn btn-primary">高级</button>
+      </div>
+      <div class="btn-group" role="group" aria-label="后端">
+        <button class="btn btn-success">Django</button>
+        <button class="btn btn-success">Flask</button>
+        <button class="btn btn-success">Nginx</button>
+      </div>
+      <div class="btn-group" role="group" aria-label="JS">
+        <button class="btn btn-info">Angular</button>
+        <button class="btn btn-info">Vue</button>
+        <button class="btn btn-info">Node</button>
+      </div>
+    </div>
+    <h5>大小按钮</h5>
+    <div class="btn-group btn-group-lg" role="group" aria-label="web">
+      <button type="button" class="btn btn-default">HTML</button>
+      <button type="button" class="btn btn-default">CSS</button>
+      <button type="button" class="btn btn-default">JS</button>
+    </div><br>
+    <div class="btn-group" role="group" aria-label="web">
+      <button type="button" class="btn btn-default">HTML</button>
+      <button type="button" class="btn btn-default">CSS</button>
+      <button type="button" class="btn btn-default">JS</button>
+    </div><br>
+    <div class="btn-group btn-group-sm" role="group" aria-label="web">
+      <button type="button" class="btn btn-default">HTML</button>
+      <button type="button" class="btn btn-default">CSS</button>
+      <button type="button" class="btn btn-default">JS</button>
+    </div><br>
+    <div class="btn-group btn-group-xs" role="group" aria-label="web">
+      <button type="button" class="btn btn-default">HTML</button>
+      <button type="button" class="btn btn-default">CSS</button>
+      <button type="button" class="btn btn-default">JS</button>
+    </div>
+    <h5>垂直排列按钮组</h5>
+    <div class="btn-group-vertical" role="group" aria-label="web">
+      <button type="button" class="btn btn-default">HTML</button>
+      <button type="button" class="btn btn-default">CSS</button>
+      <button type="button" class="btn btn-default">JS</button>
+    </div>
+    <h5>复选框</h5>
+    <label><input type="checkbox" checked>Bootstrap</label>
+    <label><input type="checkbox">Reactive</label>
+    <label><input type="checkbox">Pure CSS</label>
+    <label><input type="checkbox">Foundation</label>
+    
+    <div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-default active"><input type="checkbox" checked>Reactive</label>
+    <label class="btn btn-default"><input type="checkbox">Pure CSS</label>
+    <label class="btn btn-default"><input type="checkbox">Foundation</label>
+  </div>
+  
+    <h5>单选框</h5>
+    <label><input type="radio" name="d" value="direction">前端</label>
+    <label><input type="radio" name="d" value="direction">后端</label>
+    <label><input type="radio" name="d" value="direction">机器学习</label>
+    
+    <div class="btn-group" data-toggle="buttons">
+      <label class="btn btn-default active"><input type="radio" checked>前端</label>
+      <label class="btn btn-default"><input type="radio">后端</label>
+      <label class="btn btn-default"><input type="radio">机器学习</label>
+    </div>
+    
+    <div class="xian text-center">___________________________</div>
+    <h3>输入框组</h3>
+    <div class="input-group">
+      <span class="input-group-addon" id="basic-addon1">@</span>
+      <input type="text" class="form-control" placeholder="用户名">
+    </div>
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="邮箱地址">
+      <span class="input-group-addon" id="basic-addon2">@12306.com</span>
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon">$</span>
+      <input type="text" class="form-control" placeholder="金额">
+      <span class="input-group-addon">.00</span>
+    </div>
+    <h5>按钮式下拉菜单</h5>
+    <div class="row">
+      <div class="btn-group col-xs-2">
+        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">default
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">HTML5</a></li>
+            <li><a href="#" role="presentation">CSS3</a></li>
+            <li><a href="#" role="presentation">Javascript</a></li>
+            <li><a href="#" role="presentation">AJAX</a></li>
+            <li><a href="#" role="presentation">JAVA</a></li>
+            <li><a href="#" role="presentation">Bootstrap</a></li>
+            <li><a href="#" role="presentation">Tensorflow</a></li>
+          </ul>
+      </div> 
+        <div class="btn-group col-xs-2">
+          <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">primary
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">HTML5</a></li>
+              <li><a href="#" role="presentation">CSS3</a></li>
+              <li><a href="#" role="presentation">Javascript</a></li>
+              <li><a href="#" role="presentation">AJAX</a></li>
+              <li><a href="#" role="presentation">JAVA</a></li>
+              <li><a href="#" role="presentation">Bootstrap</a></li>
+              <li><a href="#" role="presentation">Tensorflow</a></li>
+            </ul>
+        </div> 
+          <div class="btn-group col-xs-2">
+            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown">success
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">HTML5</a></li>
+                <li><a href="#" role="presentation">CSS3</a></li>
+                <li><a href="#" role="presentation">Javascript</a></li>
+                <li><a href="#" role="presentation">AJAX</a></li>
+                <li><a href="#" role="presentation">JAVA</a></li>
+                <li><a href="#" role="presentation">Bootstrap</a></li>
+                <li><a href="#" role="presentation">Tensorflow</a></li>
+              </ul>
+          </div> 
+            <div class="btn-group col-xs-2">
+              <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">&nbsp;&nbsp;&nbsp;info&nbsp;&nbsp;
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">HTML5</a></li>
+                  <li><a href="#" role="presentation">CSS3</a></li>
+                  <li><a href="#" role="presentation">Javascript</a></li>
+                  <li><a href="#" role="presentation">AJAX</a></li>
+                  <li><a href="#" role="presentation">JAVA</a></li>
+                  <li><a href="#" role="presentation">Bootstrap</a></li>
+                  <li><a href="#" role="presentation">Tensorflow</a></li>
+                </ul>
+            </div> 
+              <div class="btn-group col-xs-2">
+                <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown">warning
+                  <span class="caret"></span></button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">HTML5</a></li>
+                    <li><a href="#" role="presentation">CSS3</a></li>
+                    <li><a href="#" role="presentation">Javascript</a></li>
+                    <li><a href="#" role="presentation">AJAX</a></li>
+                    <li><a href="#" role="presentation">JAVA</a></li>
+                    <li><a href="#" role="presentation">Bootstrap</a></li>
+                    <li><a href="#" role="presentation">Tensorflow</a></li>
+                  </ul>
+              </div> 
+                <div class="btn-group col-xs-2">
+                  <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">danger
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">HTML5</a></li>
+                      <li><a href="#" role="presentation">CSS3</a></li>
+                      <li><a href="#" role="presentation">Javascript</a></li>
+                      <li><a href="#" role="presentation">AJAX</a></li>
+                      <li><a href="#" role="presentation">JAVA</a></li>
+                      <li><a href="#" role="presentation">Bootstrap</a></li>
+                      <li><a href="#" role="presentation">Tensorflow</a></li>
+                    </ul>
+                </div> 
+      
+    </div>
+    
+    <h5>整合按钮</h5>
+    <div class="input-group">
+      <span class="input-group-btn">
+        <button class="btn btn-default">搜索</button>
+      </span>
+      <input type="text" class="form-control" placeholder="Search for...">
+    </div>
+      
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search for...">
+        <span class="input-group-btn">
+          <button class="btn btn-default">搜索</button>
+        </span>
+      </div>
+    </div>
+    <h4>整合下拉菜单</h4>
+    <div class="input-group">
+      <div class="input-group-btn">
+        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">搜索
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Google</a></li>
+          <li><a href="#">百度</a></li>
+          <li><a href="#">搜狗</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Bing</a></li>
+        </ul>
+      </div>
+      <input type="text" class="form-control" placeholder="搜索内容">
+    </div>
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="搜索内容">
+      <div class="input-group-btn">
+        
+        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">搜索
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+          <li><a href="#">Google</a></li>
+          <li><a href="#">百度</a></li>
+          <li><a href="#">搜狗</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Bing</a></li>
+        </ul>
+      </div>
+    </div>
+    
+   <div class="xian text-center">___________________________</div>
+   <h3>导航栏</h3>
+   <h5>标签页</h5>
+   <ul class="nav nav-tabs">
+     <li role="presentation" class="active">
+       <a href="#">IOS</a></li>
+     <li role="presentation"><a href="#">JAVA</a></li>
+     <li role="presentation"><a href="#">Android</a></li>
+     <li role="presentation" class="disabled"><a href="#">Dota</a></li>
+   </ul>
+   <h5>胶囊式标签</h5>
+   <ul class="nav nav-pills">
+     <li role="presentation" class="active">
+       <a href="#">IOS</a></li>
+     <li role="presentation"><a href="#">JAVA</a></li>
+     <li role="presentation"><a href="#">Android</a></li>
+   </ul>
+   <h5>垂直胶囊式标签</h5>
+   <ul class="nav nav-pills nav-stacked" style="width:100px">
+     <li role="presentation" class="active">
+       <a href="#">IOS</a></li>
+     <li role="presentation"><a href="#">JAVA</a></li>
+     <li role="presentation"><a href="#">Android</a></li>
+   </ul>
+   <h5>面包屑导航</h5>
+   <ol class="breadcrumb">
+     <li> <a href="#">前端技术</a></li>
+     <li> <a href="#">Bootstrap</a></li>
+     <li class="active">Bootstrap面包屑导航</li>
+   </ol>
+    
+    <div class="xian text-center">___________________________</div>
+    <h3>分页</h3>
+    <nav>
+      <ul class="pagination pagination-lg">
+        <li>
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li class="disabled">
+          <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <nav>
+      <ul class="pagination">
+        <li>
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li class="disabled">
+          <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <nav>
+      <ul class="pagination pagination-sm">
+        <li>
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li class="disabled">
+          <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <h5>翻页</h5>
+    <nav>
+      <ul class="pager">
+        <li><a href="#">上一页</a> </li>
+        <li><a href="#">下一页</a> </li>
+      </ul>
+    </nav>
+    <h3>标签</h3>
+    <div class="row">
+      <div class="col-xs-3"><span class="label label-default">默认</span></div>
+      <div class="col-xs-3"><span class="label label-primary">强调</span></div>
+      <div class="col-xs-3"><span class="label label-success">成功</span></div>
+      <div class="col-xs-3"><span class="label label-danger">危险</span></div>
+    </div>
+    <h3>徽章</h3>
+    <a href="#">新的消息<span class="badge">33</span></a>
+    <button class="btn btn-primary">未读消息<span class="badge">4</span></button>
+    <div class="xian text-center">___________________________</div>
+    <h3>超大屏幕</h3>
+    <div class="con" align="center">
+      <h2 class="text-info" style="font-family:宋体;font-weight:bold;font-size:49px;">逼乎</h2>
+      <br><div class="text-danger">
+        与世界分享你的逼格</div>
+      <br><br>
+      <p> <a role="button" href="#" class="btn btn-success">注册</a> </p>
+    </div>
+    
+    <div class="page-header">
+      <h1>正标题<small>副标题</small></h1>
+    </div>
+    <div class="xian text-center">___________________________</div>
+    <h3>缩略图</h3>
+    <div class="row ">
+      <div class="col-xs-3"><div class="im1">
+          <a href="#" class="thumbnail">
+<img src="./24.jpg"></a></div>
+      </div>
+      <div class="col-xs-3"><div class="im1">
+          <a href="#" class="thumbnail">
+<img src="./25.jpg"></a></div>
+      </div>
+      <div class="col-xs-3">
+          <div class="im1"><a href="#" class="thumbnail">
+<img src="./26.jpg"></a></div>
+      </div>
+      <div class="col-xs-3">
+          <div class="im1"><a href="#" class="thumbnail">
+            <img src="./27.jpg"></a></div>
+      </div>      
+    </div>
+    <div class="xian text-center">___________________________</div>
+    <h3>警告</h3>
+    <div class="alert alert-success" role="alert">操作成功  </div>
+    <div class="alert alert-danger" role="alert">
+      危险提示    </div>
+      <div class="alert alert-info" role="alert">
+        信息提示    </div>
+      <div class="alert alert-warning" role="alert">
+      警告提示    </div>
+      
+    <h4 style="color:purple">可关闭的警告框</h4>
+    <div class="alert alert-warning alert-dismissible" role="alert">
+      <button class="close" data-dismiss="alert">
+      <span aria-hidden="true">&times;</span>
+      </button>
+      可以关闭
+    </div>
+    
+    <div class="xian text-center">___________________________</div>
+    <h3>进度条</h3>
+    <div class="progress">
+      <div class="progress-bar" style="width:60%;"> 
+    </div></div>
+    <div class="progress">
+      <div class="progress-bar" style="width:60%;min-width:2em;">
+        60%
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-warning" style="width:0%;min-width:2em;">
+        0%
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-info" style="width:40%;">
+        40%
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-success progress-bar-striped" style="width:40%;">
+        40%
+      </div>
+    </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width:40%;">
+          40%
+        </div>
+      </div>
+      
+      <div class="progress">
+        <div class="progress-bar" style="width:20%">20%
+        </div>
+        <div class="progress-bar progress-bar-success" style="width:15%">15%</div>
+        <div class="progress-bar progress-bar-danger progress-bar-striped" style="width:30%">30%
+        </div>
+        <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width:15%">15%
+        </div>
+        <div class="progress-bar progress-bar-info" style="width:10%">10%
+        </div>
+      </div>
+      <div class="xian text-center">___________________________</div>
+      <h3>列表组</h3>
+      <ul class="list-group">
+        <li class="list-group-item">牛蛙</li>
+        <li class="list-group-item">重庆小面</li>
+        <li class="list-group-item">铁板鱿鱼</li>
+        <li class="list-group-item">西红柿炒鸡蛋</li>
+      </ul>
+      <h4>徽记</h4>
+      <ul class="list-group">
+        <li class="list-group-item"><span class="badge">4</span>牛蛙</li>
+        <li class="list-group-item"><span class="badge">6</span>重庆小面</li>
+        <li class="list-group-item"><span class="badge">33</span>铁板鱿鱼</li>
+        <li class="list-group-item"><span class="badge">32</span>西红柿炒鸡蛋</li>
+      </ul>
+    <div class="list-group">
+      <a href="#" class="list-group-item active">牛蛙</a>
+      <a href="#" class="list-group-item">重庆小面</a>
+      <a href="#" class="list-group-item">铁板鱿鱼</a>
+      <a href="#" class="list-group-item">西红柿炒鸡蛋</a>
+    </div>
+    
+    <div class="xian text-center">___________________________</div>
+    <h3>面板</h3>
+    <div class="panel panel-default">
+      <div class="panel-body">面板内容</div>
+    </div>
+    
+    <div class="panel panel-default">
+    <div class="panel-heading">面板标题</div>
+    <div class="panel-body">面板内容</div>
+    <div class="panel-footer">面板脚注</div>
+    </div>
+    
+    <div class="panel panel-success">
+    <div class="panel-heading">面板标题</div>
+    <div class="panel-body">面板内容</div>
+    </div>
+    
+    
+    <div class="well">文字呈现嵌入效果</div>
+    <div class="xian text-center">___________________________</div>
+    <h3>模态窗口</h3>
+      
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button data-dismiss="modal" class="close">
+          <span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title">提问</h4>
+        </div>
+        <div class="modal-body">
+          <p>问题描述</p>
+          <textarea class="form-control" placeholder="dialog下包括content,content包括header,body,footer"></textarea>
+        </div>
+        <div class="modal-footer">
+          <button data-dismiss="modal" class="btn btn-default">关闭</button>
+          <button class="btn btn-primary">提交</button>
+        </div>
+      </div>
+    </div>
+    
+    <h4>点击弹出模态窗口</h4>
+    <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">提问(点击弹出模态窗口)</button>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button data-dismiss="modal" class="close">
+            <span aria-hidden="true">x</span><span class="sr-only">Close</span>
+          </button>
+          <h4 class="modal-title">提问</h4>
+        </div>
+        <div class="modal-body">
+            <p>问题描述</p>
+            <textarea class="form-control" placeholder="用modal fade这个div把静态窗口包裹才行"></textarea>
+        </div>
+        <div class="modal-footer">
+            <button data-dismiss="modal" class="btn btn-default">关闭</button>
+            <button class="btn btn-primary">提交</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <h4>不要动画效果</h4>
+  <button class="btn btn-primary" data-toggle="modal" data-target="#myModal1">提问(点击弹出模态窗口)
+  </button>
+  <div class="modal" id="myModal1" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+            <button data-dismiss="modal" class="close">
+              <span aria-hidden="true">x</span><span class="sr-only">Close</span>
+            </button>
+            <div class="modal-title">
+              提问
+            </div>
+          </div>
+          <div class="modal-body">
+            <p>问题描述 </p>
+            <textarea class="form-control" placeholder="没有动画效果,直接出现,只是把modal fade的fade去掉就没有动画效果了"></textarea>
+          </div>
+          <div class="modal-footer">
+            <button data-dismiss="modal" class="btn btn-default">关闭</button>
+            <button class="btn btn-primary">提问</button>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+  <h4>点击空白窗口不会关闭</h4>
+  <button class="btn btn-primary" data-toggle="modal" data-target="#myModal2">提问(点击弹出模态窗口)</button>
+  <div class="modal fade" id="myModal2" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button data-dismiss="modal" class="close">
+          <span aria-hidden="true">x</span><span class="sr-only">Close</span>
+        </button>
+        <h4 class="modal-title">提问</h4>
+      </div>
+      <div class="modal-body">
+          <p>问题描述</p>
+          <textarea class="form-control" placeholder="加了这个data-backdrop=static,就不关闭"></textarea>
+      </div>
+      <div class="modal-footer">
+          <button data-dismiss="modal" class="btn btn-default">关闭</button>
+          <button class="btn btn-primary">提交</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<div class="xian text-center">___________________________</div>
+<h3>可切换导航栏</h3>    
+<ul id="myTab" class="nav nav-tabs">
+  <li class="active">
+    <a href="#dota" data-toggle="tab">DotA</a>
+  </li>
+  <li>
+    <a href="#lol" data-toggle="tab">英雄联盟</a>
+  </li>
+  <li class="dropdown">
+    <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">其他类似游戏
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu" role="menu">
+      <li>
+        <a href="#storm" tabindex="-1" data-toggle="tab">风暴英雄</a>
+      </li>
+      <li>
+        <a href="#300" tabindex="-1" data-toggle="tab">300英雄</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+<div id="myTabContent" class="tab-content">
+  <div class="tab-pane fade in active" id="dota">
+    <p>《DotA》（Defense of the Ancients），可以译作守护古树、守护遗迹、远古遗迹守卫， 是由暴雪公司出品即时战略游戏《魔兽争霸3》的一款多人即时对战、自定义地图，可支持10个人同时连线游戏，是暴雪公司官方认可的魔兽争霸的RPG地图。</p>
+  </div>
+  <div class="tab-pane fade" id="lol">
+    <p>《英雄联盟》（简称lol）是由美国Riot Games开发，中国大陆地区由腾讯游戏运营的网络游戏。</p>
+  </div>
+  <div class="tab-pane fade" id="storm">
+    <p>《风暴英雄》是由暴雪娱乐公司开发的一款运行在Windows和Mac OS上的在线多人竞技PC游戏。</p>
+    <p> 游戏中的英雄角色主要来自于暴雪三大经典游戏系列：《魔兽世界》、《暗黑破坏神》和《星际争霸》。它是一款道具收费的游戏，与《星际争霸Ⅱ》基于同一引擎开发。</p>
+  </div>
+  <div class="tab-pane fade" id="300">
+    <p>《300英雄》是由上海跳跃网络科技有限公司自主研发，深圳中青宝互动网络股份有限公司运营的一款类DOTA网游。游戏以7v7组队对抗玩法为主，提供永恒战场和永恒竞技场两种经典模式任由玩家选择，并创新性地加入勇者斗恶龙、克隆战争等多种休闲娱乐玩法.      </p>
+  </div>
+</div>
+
+<div class="xian text-center">___________________________</div>
+<h3>提示信息</h3>  
+<button class="btn btn-default" title="提示信息">非Bootstrap提示信息</button>
+
+<button style="margin-left:50px" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="提示信息">鼠标悬停</button>
+<script>
+  $(function(){$("[data-toggle='tooltip']").tooltip();});
+</script>
+<button style="margin-left:50px" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="提示信息">鼠标悬停</button>
+<button style="margin-left:50px" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="提示信息">鼠标悬停</button>
+
+<div class="xian text-center">___________________________</div>
+<h3>折叠</h3>  
+<h4>基本折叠</h4>
+<a class="btn btn-info" role="button" data-toggle="collapse" href="#dota1" aria-expanded="false" aria-controls="collapseExample">DotA</a>
+<button class="btn btn-info" data-toggle="collapse" data-target="#lol1" aria-expanded="false" aria-controls="collapseExample">LOL</button>
+<div class="collapse" id="dota1">
+  <div class="well">
+    《DotA》（Defense of the Ancients），可以译作守护古树、守护遗迹、远古遗迹守卫， 是由暴雪公司出品即时战略游戏《魔兽争霸3》的一款多人即时对战、自定义地图，可支持10个人同时连线游戏，是暴雪公司官方认可的魔兽争霸的RPG地图。
+  </div>
+</div>
+<div class="collapse" id="lol1">
+  <div class="well">
+    《英雄联盟》（简称lol）是由美国Riot Games开发，中国大陆地区由腾讯游戏运营的网络游戏。
+  </div>
+</div>
+
+<h4>面板折叠</h4>
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          DOTA
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+       《DotA》（Defense of the Ancients），可以译作守护古树、守护遗迹、远古遗迹守卫， 是由暴雪公司出品即时战略游戏《魔兽争霸3》的一款多人即时对战、自定义地图，可支持10个人同时连线游戏，是暴雪公司官方认可的魔兽争霸的RPG地图。
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          LOL
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+《英雄联盟》（简称lol）是由美国Riot Games开发，中国大陆地区由腾讯游戏运营的网络游戏。
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          风暴英雄</a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+       《风暴英雄》 是由暴雪娱乐公司开发的一款运行在Windows和Mac OS上的在线多人竞技PC游戏。
+      </div>
+    </div>
+  </div>
+</div>
+<div class="xian text-center">___________________________</div>
+<h3>最后一个轮波图</h3>
+<h4>控制前后的轮播</h4>
+<div class="row">
+<div class="col-xs-12">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="800">
+  <!-- Indicators -->
+<ol class="carousel-indicators">
+  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+</ol>
+  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="./15.jpg">
+    </div>
+    <div class="item">
+      <img src="./16.jpg">
+    </div>
+    <div class="item">
+      <img src="./17.jpg">
+    </div>
+    <div class="item">
+      <img src="./22.jpg">
+    </div>
+  </div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" ></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" ></span>
+</div>
+</div></div>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    <footer>
+      This is the area to leave space for the page.
+    </footer>
+      
+    
+    <div style="white-space:pre">
+      拉动内容时，置底版权信息位置不变
+      拉动内容时，置底版权信息位置不变
+      拉动内容时，置底版权信息位置不变
+      拉动内容时，置底版权信息位置不变
+    </div>
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+      <div style="text-align:center;font-size:20px;color:green;">版权所有</div></nav>
+  </body>
+</html>

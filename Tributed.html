@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <title>Build a Tributed Page</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .container{
+        background:#FD0323;
+      }
+      .text1{
+        color:red;
+        font:16px blue;
+      }
+      .box1{
+        border:2px solid red;
+      }
+      
+      .a{
+        margin-top:20px;
+      }
+      .M{
+        margin:20 100 20 140;
+        border:5px solid green;
+        background: pink;
+        width:50%;
+      }
+      #ii{
+        width:100px;
+        height: 100px;
+        border:10px solid silver;
+        border-radius:50%;
+      }
+      #target1{
+        background-color: black;
+        text-align:center;
+        border:1px solid blue;
+        margin:auto;
+      };
+      
+    </style>
+    
+  </head>
+  <body>
+    <script>
+      $(document).ready(function(){
+        $("button").addClass("animated bounce");
+        // $("body").addClass("animated hinge");
+        $("#target1").css("color","red");
+        $("img").addClass("animated shake");
+      });
+    </script>
+    <div class="row">
+    <div class="text-center col-xs-10" style="background:yellow">
+        <h2 >This is a simple medium-level page</h2>
+    </div>
+    <div class="col-xs-2">
+      <img  id="ii" src="/home/wind/图片/21.jpg"></div>
+  </div>
+    <div class="M">
+    <p>Things Goku love</p>
+    <ul>
+      <li>hit</li>
+      <li>hit</li>
+      <li>hit</li>
+    </ul>
+    <p>Things Conna love</p>
+    <ol>
+      <li>Ran</li>
+      <li>Playing Football</li>
+      <li>Being a detective</li>
+    </ol>
+  
+    <div class="row">
+      <div class="col-xs-6">
+    <label><input type="radio" name="gender" checked>male</label></div>
+    <div class="col-xs-6">
+    <label><input type="radio" name="gender">female</label></div>
+  </div>
+    <div class="row">
+      <div class="col-xs-4">
+    <label><input type="checkbox" name="hobby" checked>travelling</label></div>
+    <div class="col-xs-4">
+    <label><input type="checkbox" name="hobby">skiing</label></div>
+    <div class="col-xs-4">
+    <label><input type="checkbox" name="hobby">swimming</label></div>
+  </div>
+  </div>
+  
+        <img src="/home/wind/桌面/fgg_003.jpg" style="width:500px;height:300px;margin-left:100px">
+        <div class="row">
+        <div class="a col-xs-8"><label><input type="text" placeholder="cat photo URL" required></label></div>
+        <button class="a btn btn-primary col-xs-*"><i class="fa fa-paper-plane">submit</i></button>
+        </div>
+        <div class="row a">
+          <div class="col-xs-4">
+        <button class="btn btn-primary"><i class="fa fa-thumbs-up">Like</i></button></div>
+        <div class="col-xs-4">
+        <button class="btn btn-info fa fa-info-circle"><i class="fa ">Info</i></button></div>
+        <div class="col-xs-4">    
+        <button class="btn btn-danger fa fa-trash ">Delete</button></div>         
+      </div>
+      <button class="btn" id="target1">aa</button>
+        
+    
+  </body>
+</html>
